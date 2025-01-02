@@ -12,6 +12,7 @@ defmodule Game_client do
       :world
 
   """
+  def main(_),do: play()
   def play do
     IO.puts("Welcome to game of stones lt's start the game")
     Game_server.start(initial_stones_num())
